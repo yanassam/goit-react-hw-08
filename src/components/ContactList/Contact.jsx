@@ -3,8 +3,7 @@ import s from "./Contact.module.css";
 import { IoCallSharp } from "react-icons/io5";
 import { IoAccessibility } from "react-icons/io5";
 import { useDispatch } from "react-redux";
-
-import { deleteContactsThunk } from "../../redux/contactsOps";
+import { deleteContactsThunk } from "../../redux/contacts/operations";
 
 const Contact = ({ contact }) => {
   const dispatch = useDispatch();

@@ -1,9 +1,9 @@
-import { createSlice, createSelector, isAnyOf } from "@reduxjs/toolkit";
+import { createSlice, isAnyOf } from "@reduxjs/toolkit";
 import {
   addContactsThunk,
   deleteContactsThunk,
   fetchContactsThunk,
-} from "./contactsOps";
+} from "./operations";
 
 const initialState = {
   items: [],
@@ -65,14 +65,14 @@ export const contactsSlice = createSlice({
 // Селекторы
 export const selectContacts = (state) => state.contacts.items;
 
-export const selectFilteredContacts = createSelector(
-  [selectContacts, (state) => state.filters.name],
-  (contacts, filter) => {
-    return contacts.filter((contact) =>
-      contact.name.toLowerCase().includes(filter.toLowerCase())
-    );
-  }
-);
+// export const selectFilteredContacts = createSelector(
+//   [selectContacts, (state) => state.filters.name],
+//   (contacts, filter) => {
+//     return contacts.filter((contact) =>
+//       contact.name.toLowerCase().includes(filter.toLowerCase())
+//     );
+//   }
+// );
 
 // reducer слайсу
 export const contactsReducer = contactsSlice.reducer;

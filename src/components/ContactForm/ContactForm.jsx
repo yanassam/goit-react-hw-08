@@ -3,12 +3,10 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 // ********
 import { useDispatch } from "react-redux";
-import { addContactsThunk } from "../../redux/contactsOps";
+import { addContactsThunk } from "../../redux/contacts/operations";
 
 const ContactForm = () => {
   const dispatch = useDispatch();
-  // const nameId = useId();
-  // const numberId = useId();
 
   const initialValues = {
     name: "",
