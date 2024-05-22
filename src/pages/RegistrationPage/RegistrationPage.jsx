@@ -3,7 +3,7 @@ import { RegistrationFormForm } from "../../components/RegistrationForm/Registra
 const RegistrationPage = () => {
   return (
     <div>
-      <h1>Registration Page</h1>
+      {/* <h1>Registration Page</h1> */}
       <RegistrationFormForm />
     </div>
   );

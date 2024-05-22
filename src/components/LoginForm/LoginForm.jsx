@@ -27,13 +27,15 @@ export const LoginForm = () => {
     <form className={s.form} onSubmit={handleSubmit}>
       <label className={s.label}>
         Email
-        <input type="email" name="email" />
+        <input type="email" name="email" className={s.input} />
       </label>
       <label className={s.label}>
         Password
-        <input type="password" name="password" />
+        <input type="password" name="password" className={s.input} />
       </label>
-      <button type="submit">Log In</button>
+      <button type="submit" className={s.button}>
+        Log In
+      </button>
     </form>
   );
 };

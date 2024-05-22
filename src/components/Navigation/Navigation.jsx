@@ -7,7 +7,7 @@ const buildLinkClass = ({ isActive }) => {
 };
 
 const Navigation = () => (
-  <nav>
+  <nav className={s.nav}>
     <NavLink exact="true" to="/" className={buildLinkClass}>
       Home
     </NavLink>

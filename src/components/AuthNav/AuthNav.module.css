@@ -1,14 +1,8 @@
-.active{
-  color: tomato;
-}
-
-.nav {
+.authNav {
   display: flex;
   gap: 20px;
   justify-content: center;
-  background-color: #f0f0f0;
   padding: 10px 0;
-  border-bottom: 2px solid #ccc;
 }
 
 .link {
